@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html:not(.dark) {
+  color-scheme: light;
+  background-color: #f3f4f4;
+}
+
+html.dark {
+  color-scheme: dark;
+  background-color: black;
+}
+
+::selection {
+  background: rgb(247 109 137);
+  color: black;
+}
+
+/* * {
+  border: 1px solid red;
+} */
+
+.animate-logo {
+  animation: forwards 1s ease-in-out animate-logo;
+}
+
+@keyframes animate-logo {
+  from {
+    /* color: rgb(0 0 0 / 1); */
+    stroke-dasharray: 23;
+    stroke-dashoffset: 23;
+  }
+  to {
+    /* color: rgb(255 255 255 / 1); */
+    stroke-dasharray: 23;
+    stroke-dashoffset: 0;
+  }
+}
